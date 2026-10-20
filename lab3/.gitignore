@@ -1,0 +1,17 @@
+node_modules/
+
+# Generated logs
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/

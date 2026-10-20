@@ -1,0 +1,16 @@
+{
+  "name": "lab3-ket-noi-service",
+  "version": "1.0.0",
+  "description": "Lab 3 INT1448 - Ket noi va duy tri ket noi giua cac service (Fee Service + Bank simulator)",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "bank": "node bank/server.js",
+    "fee": "node fee-service/src/server.js",
+    "fee:naive": "MODE=naive node fee-service/src/server.js",
+    "lab": "node scripts/run-lab.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

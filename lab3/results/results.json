@@ -1,0 +1,906 @@
+{
+  "results": {
+    "s1": {
+      "truoc": {
+        "down": {
+          "status": 500,
+          "body": {
+            "error": "Lỗi hệ thống: ",
+            "paymentId": "P1",
+            "status": "FAILED"
+          },
+          "ms": 89.09300000000002
+        },
+        "feesWhileDown": {
+          "status": 200,
+          "body": {
+            "studentId": 1,
+            "debt": 50000000,
+            "pending": 0,
+            "currency": "VND"
+          },
+          "ms": 3.9528999999999996
+        },
+        "feeAlive": true,
+        "up": {
+          "status": 201,
+          "body": {
+            "paymentId": "P2",
+            "studentId": 1,
+            "amount": 100000,
+            "status": "PAID",
+            "chargeId": "C1",
+            "remainingDebt": 49900000
+          },
+          "ms": 22.323500000000024
+        },
+        "otherUrl": {
+          "status": 500,
+          "body": {
+            "error": "Lỗi hệ thống: ",
+            "paymentId": "P1",
+            "status": "FAILED"
+          },
+          "ms": 37.641399999999976
+        }
+      },
+      "sau": {
+        "down": {
+          "status": 503,
+          "body": {
+            "error": "Không kết nối được tới ngân hàng, chưa trừ tiền",
+            "paymentId": "P1",
+            "status": "FAILED"
+          },
+          "ms": 37.79690000000005
+        },
+        "feesWhileDown": {
+          "status": 200,
+          "body": {
+            "studentId": 1,
+            "debt": 50000000,
+            "pending": 0,
+            "currency": "VND"
+          },
+          "ms": 2.8944999999999936
+        },
+        "feeAlive": true,
+        "up": {
+          "status": 201,
+          "body": {
+            "paymentId": "P2",
+            "studentId": 1,
+            "amount": 100000,
+            "status": "PAID",
+            "chargeId": "C1",
+            "remainingDebt": 49900000
+          },
+          "ms": 23.441900000000032
+        },
+        "otherUrl": {
+          "status": 503,
+          "body": {
+            "error": "Không kết nối được tới ngân hàng, chưa trừ tiền",
+            "paymentId": "P1",
+            "status": "FAILED"
+          },
+          "ms": 37.23610000000008
+        }
+      }
+    },
+    "s2": {
+      "truoc": {
+        "single": {
+          "status": 201,
+          "body": {
+            "paymentId": "P1",
+            "studentId": 1,
+            "amount": 100000,
+            "status": "PAID",
+            "chargeId": "C1",
+            "remainingDebt": 49900000
+          },
+          "ms": 5062.443
+        },
+        "waveTotalMs": 5044.8463,
+        "waveTally": {
+          "201 PAID": 20
+        },
+        "waveMaxMs": 5041.1269,
+        "feesMaxMs": 2.256000000000313,
+        "feesAvgMs": 1.5374838709676624,
+        "feesSamples": 31,
+        "debtOk": true
+      },
+      "sau": {
+        "single": {
+          "status": 504,
+          "body": {
+            "error": "Chưa xác định được kết quả từ ngân hàng, lệnh đang chờ đối soát",
+            "paymentId": "P1",
+            "status": "PENDING"
+          },
+          "ms": 4042.1923000000006
+        },
+        "waveTotalMs": 4032.432499999999,
+        "waveTally": {
+          "504 PENDING": 20
+        },
+        "waveMaxMs": 4029.653699999999,
+        "feesMaxMs": 2.130699999997887,
+        "feesAvgMs": 1.58952500000017,
+        "feesSamples": 24,
+        "debtOk": true
+      }
+    },
+    "s3": {
+      "truoc": {
+        "totalMs": 282.6281999999992,
+        "ok": 200,
+        "tally": {
+          "201 PAID": 200
+        },
+        "connections": 200,
+        "requests": 200,
+        "duplicates": 0,
+        "afterIdleOk": 5,
+        "connectionsAfterIdle": 5
+      },
+      "sau": {
+        "totalMs": 202.52439999999842,
+        "ok": 200,
+        "tally": {
+          "201 PAID": 200
+        },
+        "connections": 10,
+        "requests": 200,
+        "duplicates": 0,
+        "afterIdleOk": 5,
+        "connectionsAfterIdle": 1
+      }
+    },
+    "s4a": {
+      "truoc": {
+        "tally": {
+          "201 PAID": 43,
+          "500 FAILED": 17
+        },
+        "paid": 43,
+        "maxMs": 52.20150000000285,
+        "charges": 60,
+        "duplicates": 0,
+        "requests": 60,
+        "connections": 60,
+        "debt": 45700000,
+        "debtExpected": 45700000,
+        "pendingCodes": [
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED"
+        ],
+        "paymentIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20",
+          "P21",
+          "P22",
+          "P23",
+          "P24",
+          "P25",
+          "P26",
+          "P27",
+          "P28",
+          "P29",
+          "P30",
+          "P31",
+          "P32",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P37",
+          "P38",
+          "P39",
+          "P40",
+          "P41",
+          "P42",
+          "P43",
+          "P44",
+          "P45",
+          "P46",
+          "P47",
+          "P48",
+          "P49",
+          "P50",
+          "P51",
+          "P52",
+          "P53",
+          "P54",
+          "P55",
+          "P56",
+          "P57",
+          "P58",
+          "P59",
+          "P60"
+        ],
+        "debtOk": true
+      },
+      "retryMu": {
+        "tally": {
+          "201 PAID": 60
+        },
+        "paid": 60,
+        "maxMs": 376.7430999999997,
+        "charges": 89,
+        "duplicates": 29,
+        "requests": 89,
+        "connections": 30,
+        "debt": 44000000,
+        "debtExpected": 44000000,
+        "pendingCodes": [],
+        "paymentIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20",
+          "P21",
+          "P22",
+          "P23",
+          "P24",
+          "P25",
+          "P26",
+          "P27",
+          "P28",
+          "P29",
+          "P30",
+          "P31",
+          "P32",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P37",
+          "P38",
+          "P39",
+          "P40",
+          "P41",
+          "P42",
+          "P43",
+          "P44",
+          "P45",
+          "P46",
+          "P47",
+          "P48",
+          "P49",
+          "P50",
+          "P51",
+          "P52",
+          "P53",
+          "P54",
+          "P55",
+          "P56",
+          "P57",
+          "P58",
+          "P59",
+          "P60"
+        ],
+        "debtOk": true
+      },
+      "sau": {
+        "tally": {
+          "201 PAID": 60
+        },
+        "paid": 60,
+        "maxMs": 656.6318000000028,
+        "charges": 60,
+        "duplicates": 0,
+        "requests": 100,
+        "connections": 41,
+        "debt": 44000000,
+        "debtExpected": 44000000,
+        "pendingCodes": [],
+        "paymentIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20",
+          "P21",
+          "P22",
+          "P23",
+          "P24",
+          "P25",
+          "P26",
+          "P27",
+          "P28",
+          "P29",
+          "P30",
+          "P31",
+          "P32",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P37",
+          "P38",
+          "P39",
+          "P40",
+          "P41",
+          "P42",
+          "P43",
+          "P44",
+          "P45",
+          "P46",
+          "P47",
+          "P48",
+          "P49",
+          "P50",
+          "P51",
+          "P52",
+          "P53",
+          "P54",
+          "P55",
+          "P56",
+          "P57",
+          "P58",
+          "P59",
+          "P60"
+        ],
+        "debtOk": true,
+        "pendingBefore": 0,
+        "pendingAfterReconcile": 0,
+        "afterReconcile": {
+          "charges": 60,
+          "duplicates": 0,
+          "debt": 44000000,
+          "paid": 60
+        }
+      }
+    },
+    "s4aStress": {
+      "sau": {
+        "tally": {
+          "201 PAID": 51,
+          "504 PENDING": 9
+        },
+        "paid": 51,
+        "maxMs": 935.9456999999966,
+        "charges": 60,
+        "duplicates": 0,
+        "requests": 159,
+        "connections": 109,
+        "debt": 44900000,
+        "debtExpected": 44900000,
+        "pendingCodes": [
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING",
+          "504/PENDING"
+        ],
+        "paymentIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20",
+          "P21",
+          "P22",
+          "P23",
+          "P24",
+          "P25",
+          "P26",
+          "P27",
+          "P28",
+          "P29",
+          "P30",
+          "P31",
+          "P32",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P37",
+          "P38",
+          "P39",
+          "P40",
+          "P41",
+          "P42",
+          "P43",
+          "P44",
+          "P45",
+          "P46",
+          "P47",
+          "P48",
+          "P49",
+          "P50",
+          "P51",
+          "P52",
+          "P53",
+          "P54",
+          "P55",
+          "P56",
+          "P57",
+          "P58",
+          "P59",
+          "P60"
+        ],
+        "debtOk": true,
+        "pendingBefore": 9,
+        "pendingAfterReconcile": 0,
+        "afterReconcile": {
+          "charges": 60,
+          "duplicates": 0,
+          "debt": 44000000,
+          "paid": 60
+        }
+      }
+    },
+    "s4b": {
+      "truoc": {
+        "tally": {
+          "500 FAILED": 21,
+          "201 PAID": 39
+        },
+        "paid": 39,
+        "maxMs": 52.87720000000263,
+        "charges": 39,
+        "duplicates": 0,
+        "requests": 60,
+        "connections": 60,
+        "debt": 46100000,
+        "debtExpected": 46100000,
+        "pendingCodes": [
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED",
+          "500/FAILED"
+        ],
+        "paymentIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20",
+          "P21",
+          "P22",
+          "P23",
+          "P24",
+          "P25",
+          "P26",
+          "P27",
+          "P28",
+          "P29",
+          "P30",
+          "P31",
+          "P32",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P37",
+          "P38",
+          "P39",
+          "P40",
+          "P41",
+          "P42",
+          "P43",
+          "P44",
+          "P45",
+          "P46",
+          "P47",
+          "P48",
+          "P49",
+          "P50",
+          "P51",
+          "P52",
+          "P53",
+          "P54",
+          "P55",
+          "P56",
+          "P57",
+          "P58",
+          "P59",
+          "P60"
+        ],
+        "debtOk": true
+      },
+      "sau": {
+        "tally": {
+          "201 PAID": 60
+        },
+        "paid": 60,
+        "maxMs": 218.60669999999664,
+        "charges": 60,
+        "duplicates": 0,
+        "requests": 88,
+        "connections": 1,
+        "debt": 44000000,
+        "debtExpected": 44000000,
+        "pendingCodes": [],
+        "paymentIds": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12",
+          "P13",
+          "P14",
+          "P15",
+          "P16",
+          "P17",
+          "P18",
+          "P19",
+          "P20",
+          "P21",
+          "P22",
+          "P23",
+          "P24",
+          "P25",
+          "P26",
+          "P27",
+          "P28",
+          "P29",
+          "P30",
+          "P31",
+          "P32",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P37",
+          "P38",
+          "P39",
+          "P40",
+          "P41",
+          "P42",
+          "P43",
+          "P44",
+          "P45",
+          "P46",
+          "P47",
+          "P48",
+          "P49",
+          "P50",
+          "P51",
+          "P52",
+          "P53",
+          "P54",
+          "P55",
+          "P56",
+          "P57",
+          "P58",
+          "P59",
+          "P60"
+        ],
+        "debtOk": true
+      }
+    },
+    "s4c": {
+      "truoc": {
+        "status": 402,
+        "body": {
+          "error": "Vượt hạn mức 20000000đ",
+          "paymentId": "P1",
+          "status": "FAILED"
+        },
+        "ms": 51.70210000000952,
+        "bankRequests": 1,
+        "charges": 0
+      },
+      "sau": {
+        "status": 402,
+        "body": {
+          "error": "Vượt hạn mức 20000000đ",
+          "paymentId": "P1",
+          "status": "FAILED"
+        },
+        "ms": 55.44999999999709,
+        "bankRequests": 1,
+        "charges": 0
+      }
+    }
+  },
+  "checks": [
+    {
+      "scn": 1,
+      "label": "ngân hàng tắt -> 503 + JSON có error trong < 1,5 s",
+      "ok": true,
+      "detail": "503, 38 ms"
+    },
+    {
+      "scn": 1,
+      "label": "Fee không sập, GET fees trả 200 nhanh",
+      "ok": true,
+      "detail": "200, 3 ms"
+    },
+    {
+      "scn": 1,
+      "label": "ngân hàng chạy lại -> 201 không cần khởi động lại Fee",
+      "ok": true,
+      "detail": "201"
+    },
+    {
+      "scn": 1,
+      "label": "BANK_URL=:4999 -> hành vi vẫn giống (503, < 1,5 s)",
+      "ok": true,
+      "detail": "503, 37 ms"
+    },
+    {
+      "scn": 2,
+      "label": "1 thanh toán trả 504 + PENDING",
+      "ok": true,
+      "detail": "504 PENDING"
+    },
+    {
+      "scn": 2,
+      "label": "thời gian trả lời ≤ 4,5 s",
+      "ok": true,
+      "detail": "1 lệnh 4.04 s, 20 lệnh chậm nhất 4.03 s"
+    },
+    {
+      "scn": 2,
+      "label": "20 thanh toán đều 504 + PENDING",
+      "ok": true,
+      "detail": "{\"504 PENDING\":20}"
+    },
+    {
+      "scn": 2,
+      "label": "GET fees khi 20 lệnh đang chờ < 300 ms",
+      "ok": true,
+      "detail": "max 2 ms"
+    },
+    {
+      "scn": 2,
+      "label": "công nợ chỉ giảm theo lệnh PAID (ở đây = 0 lệnh)",
+      "ok": true,
+      "detail": "debt=50.000.000đ"
+    },
+    {
+      "scn": 3,
+      "label": "200/200 thanh toán thành công",
+      "ok": true,
+      "detail": "200/200"
+    },
+    {
+      "scn": 3,
+      "label": "số kết nối TCP ≤ 20",
+      "ok": true,
+      "detail": "10"
+    },
+    {
+      "scn": 3,
+      "label": "sau nhàn rỗi 6 s vẫn thành công",
+      "ok": true,
+      "detail": "5/5"
+    },
+    {
+      "scn": 3,
+      "label": "không trừ tiền trùng",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "scn": "4a",
+      "label": "duplicates = 0",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "scn": "4a",
+      "label": "≥ 54/60 thanh toán thành công",
+      "ok": true,
+      "detail": "60/60"
+    },
+    {
+      "scn": "4a",
+      "label": "lệnh không thành công đều trả 504 + PENDING",
+      "ok": true,
+      "detail": "không có lệnh lỗi"
+    },
+    {
+      "scn": "4a",
+      "label": "công nợ chỉ giảm đúng tiền của các lệnh PAID",
+      "ok": true,
+      "detail": "44.000.000đ"
+    },
+    {
+      "scn": "4a",
+      "label": "mỗi lệnh ≤ 4,5 s",
+      "ok": true,
+      "detail": "657 ms"
+    },
+    {
+      "scn": "4a-stress",
+      "label": "duplicates = 0 dù ngân hàng đứt 70%",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "scn": "4a-stress",
+      "label": "lệnh không thành công đều là 504 + PENDING",
+      "ok": true,
+      "detail": "9 lệnh PENDING"
+    },
+    {
+      "scn": "4a-stress",
+      "label": "công nợ chỉ giảm đúng tiền của các lệnh PAID",
+      "ok": true,
+      "detail": "44.900.000đ"
+    },
+    {
+      "scn": "4a-stress",
+      "label": "mỗi lệnh ≤ 4,5 s",
+      "ok": true,
+      "detail": "936 ms"
+    },
+    {
+      "scn": "4a-stress",
+      "label": "sau đối soát: charges = số lệnh PAID, duplicates = 0",
+      "ok": true,
+      "detail": "charges=60, PAID=60"
+    },
+    {
+      "scn": "4b",
+      "label": "≥ 54/60 thanh toán thành công",
+      "ok": true,
+      "detail": "60/60"
+    },
+    {
+      "scn": "4b",
+      "label": "không trừ tiền hai lần (duplicates = 0)",
+      "ok": true,
+      "detail": "0"
+    },
+    {
+      "scn": "4b",
+      "label": "charges = số lệnh PAID, công nợ đúng",
+      "ok": true,
+      "detail": "charges=60, PAID=60"
+    },
+    {
+      "scn": "4b",
+      "label": "mỗi lệnh ≤ 4,5 s",
+      "ok": true,
+      "detail": "219 ms"
+    },
+    {
+      "scn": "4c",
+      "label": "trả 402",
+      "ok": true,
+      "detail": "402"
+    },
+    {
+      "scn": "4c",
+      "label": "ngân hàng chỉ nhận đúng 1 yêu cầu (không thử lại lỗi bị từ chối)",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "scn": "4c",
+      "label": "status FAILED, không trừ tiền",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
